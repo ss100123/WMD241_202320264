@@ -1,12 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
 * {
   box-sizing: border-box;
-}
-
-.card {
-  max-width: 25rem;
-  font-family: "Spoqa Han Sans Neo", sans-serif;
-  background-color: oklch(98% 0.01 60deg);
-  border-radius: 0.75rem;
 }
 
 img {
@@ -14,32 +9,53 @@ img {
   max-width: 100%;
 }
 
+.card.card-color-blue {
+  background-color: oklch(95% 0.025 200);
+}
 .card {
-  overflow-y: hidden;
-  color: oklch(30% 0.01 60deg);
+  max-width: 25rem;
+  background-color: oklch(95% 0.025 90);
+  overflow-x: hidden;
+  border-radius: 0.75rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 3rem;
+}
+
+.card__img {
+  width: 100%;
 }
 .card__top {
-  padding-block: 0.75rem;
   padding-inline: 1rem;
+  padding-block: 0.75rem;
+}
+
+.card:first-child {
+  margin-top: 0;
 }
 .card__bottom {
-  padding-block: 1rem;
-  padding-inline: 1rem;
+  padding: 1rem;
+}
+.card__p {
+  margin-top: 32px;
+}
+.card__body {
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .card__title {
   font-weight: 500;
   line-height: 1.5rem;
-  letter-spacing: 0.0094rem;
+  font-size: 1rem;
 }
 .card__subtitle {
   margin-top: 0.25rem;
   font-weight: 400;
   line-height: 1.25rem;
-  letter-spacing: 0.0156rem;
-}
-.card__p {
-  margin-top: 2rem;
-  color: oklch(50% 0.01 60deg);
+  font-size: 0.875rem;
 }
 
 .card__bottom .card__title {
@@ -52,6 +68,5 @@ img {
   margin-top: 0;
   font-weight: 400;
   line-height: 1.25rem;
-  color: oklch(50% 0.01 60deg);
   letter-spacing: 0.0156rem;
 }
