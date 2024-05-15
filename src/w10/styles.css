@@ -44,7 +44,7 @@ body {
 }
 
 .content {
-  background-color: #f3f2fc;
+  background-color: hsl(0, 0%, 100%);
   padding: 20px;
   margin: 20px 0;
 }
@@ -69,10 +69,6 @@ footer {
 .main-container {
   display: flex;
 }
-
-/* .flex-container > * { */
-/* flex-grow: 1; */
-/* } */
 .flex-child-opt-1 {
   flex-grow: 1;
 }

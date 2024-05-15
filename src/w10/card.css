@@ -10,7 +10,7 @@
   font-weight: 400;
   line-height: 150%;
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #000000;
   border-radius: 0.75rem;
 }
 .section--opt-pos-rel .card {
@@ -359,16 +359,13 @@
   padding-inline: var(--card-m-x);
 }
 .card__author {
+  color: #381fd1;
   font-weight: 600;
 }
 .card__title {
   font-weight: 600;
 }
-.card__subtitle {
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: oklch(0.5 0 0);
-}
+
 .card__desc {
   display: -webkit-box;
   overflow: hidden;
@@ -387,8 +384,6 @@
   display: block;
   font-weight: 600;
   text-align: center;
-  background-color: #ff0000;
-  border-radius: 624.9375rem;
 }
 .card--pos-rel {
   position: relative;
