@@ -86,7 +86,7 @@ footer {
 }
 .sidebar {
   width: 200px;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   padding: 20px;
 }
 .sidebar ul {
@@ -99,6 +99,7 @@ footer {
 
 .sidebar ul li a {
   text-decoration: none;
+  gap: 20px;
   color: #333;
 }
 .content {
