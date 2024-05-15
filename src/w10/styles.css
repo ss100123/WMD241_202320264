@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+.container > div {
+  padding: 3px;
+}
+:root {
+  --card-m-y: 1rem;
+  --card-m-x: 1.5rem;
+}
+body > nav {
+  font-family: Arial, sans-serif;
+  font-size: 0.5437rem;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #11284b;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 0.9375rem;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #11284b;
+}
+
+.navbar {
+  background-color: #f6f6eb;
+  color: #381fd1;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+}
+
+.logo {
+  margin: 0;
+  color: #381fd1;
+}
+
+.content {
+  background-color: #f3f2fc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.project {
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #11284b;
+}
+
+footer {
+  background-color: #11284b;
+  color: #f3f2fc;
+  text-align: center;
+  padding: 0.625rem 0;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container {
+  display: flex;
+}
+
+/* .flex-container > * { */
+/* flex-grow: 1; */
+/* } */
+.flex-child-opt-1 {
+  flex-grow: 1;
+}
+
+.flex-child-opt-2 {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+/* 카드 그리드 컨테이너 */
+.card-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 20px;
+}
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.card__top,
+.card__bottom {
+  padding: 15px;
+}
+
+.card__middle {
+  width: 100%;
+}
+
+.card__author,
+.card__author-role,
+.card__title,
+.card__subtitle,
+.card__desc {
+  margin: 5px 0;
+}
+
+/* 반응형 레이아웃 */
+@media (min-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -41,6 +41,50 @@ img {
 .card:nth-child(1) {
   margin-top: 0;
 }
+.section--opt-pos-rel .card {
+  position: relative;
+}
+.section--opt-pos-rel .card:nth-child(1) {
+  left: 1rem;
+}
+.section--opt-pos-rel .card:nth-child(2) {
+  top: -2rem;
+  left: 2rem;
+}
+.section--opt-pos-rel .card:nth-child(3) {
+  top: -4rem;
+  left: 3rem;
+}
+.section--opt-pos-rel .card:nth-child(4) {
+  top: -6rem;
+  left: 4rem;
+}
+.section--opt-pos-rel .card:nth-child(5) {
+  top: -8rem;
+  left: 5rem;
+}
+
+.section--opt-margin-negative .card {
+  position: relative;
+  margin-top: -2rem;
+}
+.section--opt-margin-negative .card:nth-child(1) {
+  z-index: 1;
+  margin-top: 0;
+}
+.section--opt-margin-negative .card:nth-child(2) {
+  z-index: 2;
+}
+.section--opt-margin-negative .card:nth-child(3) {
+  z-index: 3;
+}
+.section--opt-margin-negative .card:nth-child(4) {
+  z-index: 4;
+}
+.section--opt-margin-negative .card:nth-child(5) {
+  z-index: 5;
+}
+
 .card__top {
   padding-block: 1.25rem;
   padding-inline: 1.5rem;
@@ -49,7 +93,7 @@ img {
   width: 100%;
   aspect-ratio: 4/3;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .card__bottom {
   padding-block: 1.25rem;
@@ -71,4 +115,9 @@ img {
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.container > div:nth-child(5) {
+  background-color: oklch(90% 0.05 160);
+  border: 1px dotted oklch(40% 0.05 160);
+  color: oklch(20% 0.05 160);
 }
